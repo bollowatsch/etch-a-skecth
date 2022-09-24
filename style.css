@@ -8,7 +8,6 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  /*grid-template-columns: 150px 150px 150px 150px;*/
   gap: 0;
   padding: 0;
 }
