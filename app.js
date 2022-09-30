@@ -13,7 +13,7 @@ function resetGrid() {
 }
 
 function changeColor(e) {
-  e.target.style.backgroundColor = "#2C3333";
+  e.target.style.backgroundColor = "#A5C9CA";
 }
 
 function setGrid(size = 30) {
