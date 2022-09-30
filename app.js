@@ -1,20 +1,28 @@
 const container = document.querySelector(".container");
-
-for (let i = 0; i < 16 * 16; i++) {
-  const square = document.createElement("div");
-  square.classList.toggle("square");
-  square.addEventListener("mouseover", changeColor)
-  container.appendChild(square);
-}
-
 gridsizeBtn = document.querySelector("#gridsize");
 gridsizeBtn.addEventListener("click", resetGrid);
 
-function changeColor(e) {
-  e.target.style.backgroundColor = "red";
-}
+//initial setup (10 by 10)
+setGrid();
 
 function resetGrid() {
-  let size = prompt("Enter a valid grid size (must be < 100)");
-  while (!(size > 0 && size <= 100)) size = prompt("Enter a valid grid size (must be < 100)");
+  let size = prompt("Enter a valid grid size (not greater than 100)");
+  if (!(size > 0 && size <= 100)) alert("invalid grid size, please try again");
+  container.innerHTML = "";
+  setGrid(size);
+}
+
+function changeColor(e) {
+  e.target.style.backgroundColor = "blue";
+}
+
+function setGrid(size = 10) {
+  for (let i = 0; i < size * size; i++) {
+    const square = document.createElement("div");
+    square.classList.toggle("square");
+    square.addEventListener("mouseover", changeColor)
+    let squareSize = Math.floor(container.clientWidth / size);
+    square.style.width = squareSize.toString() + "px";
+    container.appendChild(square);
+  }
 }

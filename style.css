@@ -1,12 +1,13 @@
 .square {
-  width: calc(100%/16);
   aspect-ratio: 1;
-  /*outline: 1px solid black;*/
+  /*outline: 1px solid black;
+  width: calc(100%/16);*/
   margin: 0;
 }
 
 .container {
-  width: 960px;
+  width: 800px;
+  aspect-ratio: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 0;
