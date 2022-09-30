@@ -13,15 +13,15 @@ function resetGrid() {
 }
 
 function changeColor(e) {
-  e.target.style.backgroundColor = "blue";
+  e.target.style.backgroundColor = "#2C3333";
 }
 
-function setGrid(size = 10) {
+function setGrid(size = 30) {
   for (let i = 0; i < size * size; i++) {
     const square = document.createElement("div");
     square.classList.toggle("square");
     square.addEventListener("mouseover", changeColor)
-    let squareSize = Math.floor(container.clientWidth / size);
+    let squareSize = container.clientWidth / size;
     square.style.width = squareSize.toString() + "px";
     container.appendChild(square);
   }
