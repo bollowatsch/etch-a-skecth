@@ -28,3 +28,8 @@ body {
   font-family: roboto, sans-serif;
   background-color: #E7F6F2;
 }
+
+h1 {
+  color: #2C3333;
+  font-weight: 900;
+}
