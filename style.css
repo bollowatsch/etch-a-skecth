@@ -1,13 +1,17 @@
 .square {
   width: calc(100%/16);
   aspect-ratio: 1;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
   margin: 0;
 }
 
 .container {
+  width: 960px;
   display: flex;
   flex-wrap: wrap;
   gap: 0;
   padding: 0;
+  border: 1px solid black;
 }
+
+button {}
