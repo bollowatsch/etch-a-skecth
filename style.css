@@ -30,7 +30,7 @@ input {
   color: #2C3333;
   padding: 0.4em;
   margin: 1em;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
@@ -64,7 +64,5 @@ body {
 h1 {
   color: #2C3333;
   font-weight: 900;
-  font-size: 3em;
-  justify-self: baseline;
-  margin-bottom: 2%;
+  font-size: 4em;
 }
