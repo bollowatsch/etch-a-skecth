@@ -17,9 +17,11 @@
 <body>
   <h1>Etch - a - Sketch</h1>
   <form action="">
-    <p>Enter new grid size:</p>
-    <input type="number" min="10" max="70" value="20">
-    <button id="gridsize">Change grid size</button>
+    <label for="gridSize">
+      <p>Enter new grid size:</p>
+    </label>
+    <input type="number" id="gridSize" min="10" max="70" value="20">
+    <input type="submit" id="gridSizeBtn" value="Change grid size">
   </form>
   <div class="container">
 
